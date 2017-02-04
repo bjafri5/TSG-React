@@ -29753,7 +29753,7 @@
 	    primaryColor: '#4c4751'
 	  },
 	  auth: {
-	    redirectUrl: 'http://localhost:5000/login-loading',
+	    redirectUrl: 'http://theswotsguide.herokuapp.com/login-loading' || 'http://localhost:5000/login-loading',
 	    responseType: 'token'
 	  },
 	  usernameStyle: 'email',
@@ -73662,7 +73662,7 @@
 	    foodImage: "img/burger.jpg"
 	}, {
 	    foodName: "Pizzas",
-	    foodImage: "img/Pizza.jpg"
+	    foodImage: "img/pizza.jpg"
 	}, {
 	    foodName: "Cheesecakes",
 	    foodImage: "img/cheesecake.jpg"

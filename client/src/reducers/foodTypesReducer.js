@@ -5,7 +5,7 @@ const foodTypes = [
     },
     {
         foodName: "Pizzas",
-        foodImage: "img/Pizza.jpg"
+        foodImage: "img/pizza.jpg"
     },
     {
         foodName: "Cheesecakes",
