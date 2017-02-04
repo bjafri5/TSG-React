@@ -29769,7 +29769,7 @@
 	
 	function signup() {
 	  return function (dispatch) {
-	    localStorage.setItem('redirect_path', window.location.pathname);
+	    //localStorage.setItem('redirect_path', window.location.pathname);
 	    lock.show({
 	      initialScreen: 'signUp'
 	    });

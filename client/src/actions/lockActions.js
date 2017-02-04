@@ -62,7 +62,7 @@ export function login() {
 
 export function signup() {
   return (dispatch) => {
-    localStorage.setItem('redirect_path', window.location.pathname);
+    //localStorage.setItem('redirect_path', window.location.pathname);
     lock.show({
       initialScreen: 'signUp'
     });
