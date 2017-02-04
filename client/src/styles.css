@@ -1,0 +1,218 @@
+ /*==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+a, a:hover, a:visited, a:link, a:active
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: steelblue;
+}
+
+textarea {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+  color: black;
+}
+
+img {
+  text-align: center;
+}
+
+.hidden-navbar {
+  transform: translateY(-50px);
+  -webkit-transform:translateY(-50px);
+  -moz-transform: translateY(-50px);
+}
+
+.navbar {
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+}
+
+
+a.carousel-control {
+  color: white;
+}
+
+.jumbotron {
+  margin-bottom: 60px;
+}
+
+.multi-carousel img {
+  width: 200px;
+  height: 200px;
+  border: solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.btn-gradient {
+  border-color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
+  color: white;
+}
+
+.btn-margin {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.white-border {
+  border: 1px solid;
+  border-color:white;
+  padding: 10px;
+}
+
+ .loading-container {
+    margin-top: 33vh;
+    margin-bottom: 33vh;
+    text-align: center;
+  }
+
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/main-background.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+}
+
+.gradient {
+  background: linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+}
+
+.gradient-red {
+  background: linear-gradient(bottom, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
+  background: -webkit-linear-gradient(bottom, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
+  background: -moz-linear-gradient(bottom, rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3));
+}
+
+.gradient-green {
+  background: linear-gradient(bottom, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0.3));
+  background: -webkit-linear-gradient(bottom, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0.3));
+  background: -moz-linear-gradient(bottom, rgba(0, 255, 0, 0.3), rgba(0, 255, 0, 0.3));
+}
+
+    
+.carousel-full {
+  height: 93vh;
+  margin-bottom: 60px; }
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px; }
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.carousel-caption p {
+  margin-top: 20px;
+  margin-bottom: 40px; 
+  }
+
+.carousel-caption a {
+  color: white;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-full .item {
+  height: 93vh;
+  background-color: #777; }
+
+.carousel-full > .carousel-inner > .item > img {
+  min-width: 100%;
+  min-height: 100%; }
+
+.img-circle {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/* Center align the text within the two columns below the carousel */
+.marketing .col-lg-6 {
+  margin-bottom: 20px;
+  text-align: center; }
+.marketing h2 {
+  font-weight: normal;
+  text-align: center; }
+
+.selection-row {
+  padding: 10px; }
+
+.signup-row {
+  padding: 40px; }
+
+.signup-info {
+  max-width: 500px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px; }
+
+hr {
+  border-color: #000000;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.food-types .row {
+  margin: 20px; }
+
+.food {
+  padding: 20px;
+  text-align: center;
+  color: white; }
+
+.food a {
+  color: white; }
+.food h2 {
+  margin-bottom: 10px; }
+
+.signup-form {
+  border-radius: 5px; 
+  padding-top:10px;
+  padding-bottom: 10px;}
+
+  .signup-form .btn {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+
+textarea {
+  color: black;
+  border-radius: 5px; }
+
+  @media (max-width: 768px) {
+    .signup-row {
+      padding: 10px;
+      padding-bottom: 40px; 
+    }
+}
+  
+.form-container {
+  margin-top:30px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.form-result {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+form > .row {
+  margin-top:10px;
+  margin-bottom:10px;
+}
