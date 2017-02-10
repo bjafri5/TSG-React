@@ -60218,7 +60218,7 @@
 	                _react2.default.createElement(
 	                    "a",
 	                    null,
-	                    _react2.default.createElement("img", { className: "img-responsive center-block", src: this.props.foodImage, alt: this.props.foodName }),
+	                    _react2.default.createElement("img", { className: "img-responsive center-block", src: this.props.foodImage, alt: this.props.foodName, width: "300px", height: "300px" }),
 	                    _react2.default.createElement(
 	                        "h2",
 	                        null,
