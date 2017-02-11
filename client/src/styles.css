@@ -3,6 +3,14 @@
    ========================================================================== */
 
 
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/main-background.jpg") no-repeat center center fixed;
+	background-size: cover;
+	color: white;
+}
+
 a, a:hover, a:visited, a:link, a:active
 {
     cursor: pointer;
@@ -75,14 +83,6 @@ a.carousel-control {
     margin-bottom: 33vh;
     text-align: center;
   }
-
-body {
-	padding-top: 50px;
-	padding-bottom: 20px;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/main-background.jpg") no-repeat center center fixed;
-	background-size: cover;
-	color: white;
-}
 
 .gradient {
   background: linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));

@@ -1,6 +1,6 @@
 import React from 'react';
 import FoodCard from './FoodCard.jsx';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 class MultiCarousel extends React.Component {
 
@@ -10,14 +10,19 @@ class MultiCarousel extends React.Component {
             numOfCardsPerCarousel: 4
         }
     }
+    
+    updateNumOfCards() {
+        if (window.innerWidth <= 999) {
+            this.setState({ numOfCardsPerCarousel: 1 });
+        } else if (this.state.numOfCardsPerCarousel !== 4) {
+            this.setState({ numOfCardsPerCarousel: 4 });
+        }
+    }
 
     componentDidMount() {
+        this.updateNumOfCards();
         window.onresize = () => {
-            if (window.innerWidth <= 999) {
-                this.setState({numOfCardsPerCarousel: 1});
-            } else if (this.state.numOfCardsPerCarousel !== 4) {
-                this.setState({numOfCardsPerCarousel: 4});
-            }
+            this.updateNumOfCards();
         }
     }
 

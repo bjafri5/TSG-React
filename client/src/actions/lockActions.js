@@ -46,7 +46,7 @@ const lock = new Auth0Lock('0r7O6A4SiVTwjEG6LQDoGP7byPqHsSlY', 'bjafri5.auth0.co
     primaryColor: '#4c4751'
   },
   auth: {
-    redirectUrl: 'http://theswotsguide.herokuapp.com/login-loading' || 'http://localhost:5000/login-loading',
+    redirectUrl: 'http://localhost:5000/login-loading',
     responseType: 'token'
   },
   usernameStyle: 'email',
