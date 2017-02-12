@@ -18,7 +18,7 @@ export default class SignupMessage extends React.Component {
                         </div>
                     </div>
                     <div className="col-md-5 col-md-pull-7">
-                        <img className="img-responsive center-block" width="500px" height="250px" src="http://tomtomfest.com/content/uploads/2016/03/Hubbell-Red-Pump-Kitchen-Summer-1506-Web-0027.jpg"
+                        <img className="img-responsive center-block" width="500px" height="250px" src="img/signup.jpg"
                             alt="kitchen" />
                     </div>
                 </div>
