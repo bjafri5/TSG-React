@@ -8,7 +8,7 @@ import {
 
 const initialState = {
     updating: false,
-    userData: JSON.parse(localStorage.getItem('user_data')),
+    userData: typeof localStorage != 'undefined' ? JSON.parse(localStorage.getItem('user_data')) : null,
     error: null
 }
 export default (state = initialState, action) => {

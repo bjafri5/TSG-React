@@ -7,6 +7,7 @@ import LoginLoading from './components/LoginLoading.jsx';
 import BusinessSignup from './components/BusinessSignup.jsx';
 import PersonalSignup from './components/PersonalSignup.jsx';
 import PersonalSignupRedux from './components/PersonalSignupRedux.jsx';
+import MenuCreation from './components/MenuCreation.jsx';
 import store from './store';
 import { login } from './actions/lockActions';
 
@@ -33,6 +34,7 @@ const routes = (
             <Route path='food-selection' component={FoodSelection} />
             <Route path='business-signup' component={BusinessSignup} onEnter={requireAuth} />
             <Route path='personal-signup' component={PersonalSignupRedux} onEnter={requireAuth} />
+            <Route path='menu-creation' component={MenuCreation} onEnter={requireAuth} />
         </Route>
         <Route path='login-loading' component={LoginLoading} onEnter={loginLoadingHandler} />
     </div>

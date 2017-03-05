@@ -18,7 +18,7 @@ const checkTokenExpiry = (jwt) => {
 }
 
 const initialState = {
-    authenticated: checkTokenExpiry(localStorage.getItem('id_token')),
+    authenticated: typeof localStorage != 'undefined' ? checkTokenExpiry(localStorage.getItem('id_token')) : false,
     authenticating: false,
     percentAuthenticated: 0,
     error: null

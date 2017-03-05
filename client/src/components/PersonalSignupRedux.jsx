@@ -17,15 +17,21 @@ class PersonalSignupRedux extends React.Component {
                 address: (values.address && values.address.trim()) ? values.address.trim() : undefined
             }
         }
+        this.submitted = true;
         return this.props.updateUser(this.props.userId, updatedUser);
     }
 
+    handleChange() {
+        this.submitted = false;
+    }
+
     render() {
+        console.log('props', this.props);
         return (
             <FormContainer heading={"Personal Information"}>
-                <form onSubmit={this.props.handleSubmit(this.handleSubmit.bind(this))}>
-                    <FormResult submitting={this.props.submitting} submitSucceeded={this.props.submitSucceeded}
-                        submitFailed={this.props.submitFailed} submittingMessage={"Updating"} 
+                <form onChange={this.handleChange.bind(this)} onSubmit={this.props.handleSubmit(this.handleSubmit.bind(this))}>
+                    <FormResult submitting={this.props.submitting} submitSucceeded={this.submitted}
+                        submitFailed={this.props.submitFailed} submittingMessage={"Updating"}
                         submitSuccessMessage={"Updated"}
                         submitFailedMessage={"An error occured while updating. Please try again later."} />
                     <br />

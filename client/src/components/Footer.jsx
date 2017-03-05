@@ -3,7 +3,9 @@ import React from 'react';
 export default class Footer extends React.Component {
 
     scrollToTop(e) {
-        e.preventDefault();
+        if (e) {
+            e.preventDefault();
+        }
         let scrollTimer = setInterval(() => {
             if (window.scrollY !== 0) {
                 let y = window.scrollY;

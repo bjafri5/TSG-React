@@ -23,15 +23,44 @@ router.get('/foods', (req, res) => {
 	});
 });
 
+router.get('/foods/:businessName', (req, res) => {
+	let businessName = req.params.businessName;
+
+	// Food.aggregate([
+	// 	{
+	// 		$lookup:
+	// 		{
+	// 			from: "businesses",
+	// 			localField: "businessName",
+	// 			foreignField: "businessName",
+	// 			as: "business"
+	// 		}
+	// 	}
+	// ]).exec((err, result) => {
+	// 	console.log(result)
+	// 	res.send(result);
+	// });
+
+
+	Food.find({ 'businessName': businessName }, (err, foods) => {
+		if (err) {
+			res.status(500).send(err);
+		}
+		console.log(foods);
+		res.send(foods);
+	})
+})
+
 router.post('/food', (req, res) => {
-	console.log('inside db');
+	//console.log('inside db');
 	let food = req.body;
-	console.log(food);
+	//console.log(food);
 	Food.create(food, (err, foodResult) => {
 		if (err) {
 			res.status(500).send(err);
 		}
 		res.json(foodResult);
+		//
 		console.log('saved to db');
 	})
 });
