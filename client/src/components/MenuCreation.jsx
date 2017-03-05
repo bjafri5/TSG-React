@@ -130,7 +130,10 @@ MenuCreation = reduxForm({
 })(MenuCreation);
 
 export default connect(
-    (state) => {
+    (state, ownProps) => {
+        if (!state.lock.authenticated) {
+            ownProps.router.push('/');
+        }
         let businessesData = null;
         let foodTypesData = state.foodTypes.map(foodType => foodType.foodName);
         if (state.businesses.businessesData) {
@@ -150,9 +153,6 @@ export default connect(
     },
     (dispatch) => {
         return {
-            setCurrentBusiness: (business) => {
-                return dispatch(setCurrentBusiness(business));
-            },
             getBusinesses: (userId) => {
                 return dispatch(getBusinesses(userId));
             },

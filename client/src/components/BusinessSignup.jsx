@@ -71,7 +71,10 @@ BusinessSignup = reduxForm({
 })(BusinessSignup);
 
 export default connect(
-    (state) => {
+    (state, ownProps) => {
+        if (!state.lock.authenticated) {
+            ownProps.router.push('/');
+        }
         return {
             userId: state.user.userData.user_id,
             businesses: state.businesses.businessesData
