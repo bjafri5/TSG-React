@@ -8,11 +8,14 @@ let router = express.Router();
 
 const domain = 'https://theswotsguide.herokuapp.com'
 
-router.get('*',function(req,res,next){
-  if(req.headers['x-forwarded-proto']!='https')
-    res.redirect(domain + req.url);
-  else
-    next();
+router.get('*', function (req, res, next) {
+	if (req.headers['x-forwarded-proto'] != 'https') {
+		res.redirect(domain + req.url);
+	}
+	else {
+		res.render('index.html');
+		next();
+	}
 })
 
 module.exports = router;
