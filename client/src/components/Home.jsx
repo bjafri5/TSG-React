@@ -30,7 +30,16 @@ class Home extends React.Component {
         }
         return (
             <div>
-                <Carousel />
+                {
+                    (screen.width <= 800) ? 
+                    <Carousel img1={"img/food-background1-mobile.jpg"} 
+                        img2={"img/food-background2-mobile.jpg"} 
+                        img3={"img/food-background3-mobile.jpg"} />
+                    : 
+                    <Carousel img1={"img/food-background1.jpg"} 
+                        img2={"img/food-background2.jpg"} 
+                        img3={"img/food-background3.jpg"} />
+                } 
                 <MainSelection />
                 <hr />
                 <SignupMessage heading={"Sign Up"} 

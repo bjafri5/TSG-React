@@ -11,7 +11,7 @@ export default class Carousel extends React.Component {
                 </ol>
                 <div className="carousel-inner">
                     <div className="item active">
-                        <img src="img/food-background1.jpg" />
+                        <img src={this.props.img1} />
                         <a>
                             <div className="carousel-caption gradient">
                                 <h1>Recommendation 1</h1>
@@ -20,7 +20,7 @@ export default class Carousel extends React.Component {
                         </a>
                     </div>
                     <div className="item">
-                        <img src="img/food-background2.jpg" />
+                        <img src={this.props.img2} />
                         <a>
                             <div className="carousel-caption gradient">
                                 <h1>Recommendation 2</h1>
@@ -29,7 +29,7 @@ export default class Carousel extends React.Component {
                         </a>
                     </div>
                     <div className="item">
-                        <img src="img/food-background3.jpg" />
+                        <img src={this.props.img3} />
                         <a>
                             <div className="carousel-caption gradient">
                                 <h1>Recommendation 3</h1>
