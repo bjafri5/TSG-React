@@ -15,7 +15,7 @@ export default class MainSelection extends React.Component {
                     </div>
                     <div className="col-lg-6 col-md-6">
                         <a>
-                            <img className="img-circle" src="https://www.zagat.com/proxy/v1.4?m=image&a=resize&url=http%3A//storage.googleapis.com/zgt-photos/0x487604cc1849430b_0xc6fde59f0456a483/fd6212ded649f7a5625a03571e35b09c.jpg&width=500&height=500&key=abbc09b7c840c10937a4db331422c98b"
+                            <img className="img-circle" src="https://www.scandichotels.com/imagevault/publishedmedia/qn6infvg30381stkubky/scandic-sundsvall-city-restaurant-verket-10.jpg"
                                 alt="Generic placeholder image" width="150" height="150" />
                             <h2>Select based on location &raquo;</h2>
                         </a>
